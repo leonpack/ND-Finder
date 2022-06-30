@@ -29,55 +29,21 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        txtZalpha = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        ckbAlpha = new javax.swing.JCheckBox();
         txtZ = new javax.swing.JTextField();
         btnFind = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        txtZalpha = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
         lbResult = new javax.swing.JLabel();
-        ckbAlpha = new javax.swing.JCheckBox();
-        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Normal distribution Finder");
+        setIconImages(null);
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel1.setText("Normal Distribution Finder");
-
-        jLabel2.setText("input Z (e.g x,xx):");
-        jLabel2.setToolTipText("");
-
-        txtZalpha.setToolTipText("");
-        txtZalpha.setEnabled(false);
-        txtZalpha.setName("txtZalpha"); // NOI18N
-        txtZalpha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtZalphaActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setText("input Z alpha (e.g x,xx):");
-
-        txtZ.setToolTipText("");
-        txtZ.setName("txtZ"); // NOI18N
-        txtZ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtZActionPerformed(evt);
-            }
-        });
-
-        btnFind.setText("Find");
-        btnFind.setName("btnFind"); // NOI18N
-        btnFind.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFindActionPerformed(evt);
-            }
-        });
-
-        lbResult.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        lbResult.setName("lbResult"); // NOI18N
+        jLabel5.setText("@flamingo");
 
         ckbAlpha.setText("zAlpha?");
         ckbAlpha.setToolTipText("");
@@ -89,7 +55,38 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("@flamingo");
+        txtZ.setToolTipText("");
+        txtZ.setName("txtZ"); // NOI18N
+        txtZ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtZActionPerformed(evt);
+            }
+        });
+
+        btnFind.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        btnFind.setText("Find");
+        btnFind.setName("btnFind"); // NOI18N
+        btnFind.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFindActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Z alpha (e.g x,xx):");
+
+        txtZalpha.setToolTipText("");
+        txtZalpha.setEnabled(false);
+        txtZalpha.setName("txtZalpha"); // NOI18N
+        txtZalpha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtZalphaActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("Z (e.g x,xx):");
+        jLabel2.setToolTipText("");
+
+        lbResult.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,54 +97,48 @@ public class GUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addComponent(jLabel1))
+                                .addGap(55, 55, 55)
+                                .addComponent(lbResult))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(42, 42, 42)
+                                .addGap(20, 20, 20)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnFind, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel3)
-                                            .addComponent(jLabel2)
-                                            .addComponent(ckbAlpha))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtZ, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtZalpha, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                        .addGap(0, 24, Short.MAX_VALUE))
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel2)
+                                    .addComponent(ckbAlpha))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtZ, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtZalpha, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnFind, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 18, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel5)))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(66, 66, 66)
-                .addComponent(lbResult)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(ckbAlpha)
-                .addGap(23, 23, 23)
+                .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtZ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(txtZalpha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(btnFind, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ckbAlpha)
+                    .addComponent(btnFind, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addComponent(lbResult)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addContainerGap())
         );
+
+        jLabel2.getAccessibleContext().setAccessibleName("Z (e.g x,xx):");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -179,8 +170,14 @@ public class GUI extends javax.swing.JFrame {
             String text = txtZalpha.getText().trim();
             try{
             double convert = Double.parseDouble(text);
-            String result = String.format("%.6f", nd.inverseCumulativeProbability(convert));
-            lbResult.setText(result);
+            if(convert > 0 && convert <= 1)
+                {
+                    String result = String.format("%.6f", nd.inverseCumulativeProbability(convert));
+                    lbResult.setText(result);
+                }
+            else {
+                JOptionPane.showMessageDialog(this, "Out of range!!!");
+            }
             }catch(NumberFormatException ex){
                 JOptionPane.showMessageDialog(this, "You have to input number");
             }
@@ -243,7 +240,6 @@ public class GUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnFind;
     private javax.swing.JCheckBox ckbAlpha;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
